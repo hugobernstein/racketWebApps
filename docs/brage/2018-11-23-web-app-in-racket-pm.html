@@ -1,0 +1,89 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+  <title>Web Applications in Racket, hbernstein</title>
+  <script src="//use.typekit.net/ubv3gvw.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    try {
+      Typekit.load();
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" type="text/css" href="../svartalv/css/monokai.css" />
+  <link rel="stylesheet" type="text/css" href="../svartalv/css/style.css" />
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+
+  <script type="text/javascript" src='../svartalv/vendor/jquery-3.3.1.min.js'></script>
+  <script type="text/javascript">
+    $("#article").ready(function(){
+    var cnt=0;
+    var minute1=0;
+    var minute2=0;
+    var content = $('#article').text();
+    if(content.length < 1)
+    　　return;
+    cnt = content.length - content.match(/[\r\n]/g).length
+    console.log(cnt / 500);
+    console.log(cnt / 300);
+    minute1 = Math.round(cnt / 500);
+    minute2 = Math.round(cnt / 300);
+    var span = document.createElement("span");
+    span.setAttribute("class","mitten");
+    span.innerHTML="Det finns ungefär " + cnt + " ord，behöver " + minute1 + "~" + minute2 + " minuter att läsa";
+    $("#toc").after(span);
+    });
+  </script>
+
+  <style>
+    #header {
+      background-image: url(../svartalv/bilder/background.jpeg);
+      background-size: cover;
+      background-position: center top;
+      margin-bottom: 6rem;
+      }
+    </style>
+
+
+
+
+</head>
+
+<body>
+  <div id="header">
+    <a href="../index.html">
+      <img src="../svartalv/bilder/logo-fjaril-vit.png" />
+    </a>
+    <span class="righty">
+      <a href="index.html">&uarr;</a>
+      <a href="../../index.ptree">&delta;</a>
+    </span>
+
+  </div>
+
+  <div id="avsnitt" class="sketch__pattern">
+    <p class="date">Friday, November <span class="ord">23rd,</span> 2018</p>
+    <h1>Web Applications in Racket</h1>
+
+    <div class="category"><a href="category/blog.html">blog</a></div>
+
+
+
+    <div id="toc"><h2>Table of Contents</h2><div class="nav2"><span><a href="#g582">1. intro</a></span></div><div class="nav3"><span><a href="#g583">1.1. Webbapplikation</a></span></div><div class="nav3"><span><a href="#g584">1.2. Webanwendung</a></span></div><div class="nav2"><span><a href="#g585">Källor</a></span></div></div>
+    <div id="article">
+      <h2 id="g582">1. intro</h2><p>There are many methods and tools for making dynamic web applications out there.<br/>Here I am trying a new way, <strong>Racket/Lisp</strong>.</p><h3 id="g583">1.1. Webbapplikation</h3><p>  En webbapplikation är ett samlingsnamn för programvara som man kommer åt genom att använda en webbläsare. Webbapplikationer har blivit mer populära eftersom hastigheten på Internet har ökat.</p><h3 id="g584">1.2. Webanwendung</h3><p>Eine Webanwendung (auch Online-Anwendung, Webapplikation oder kurz Web-App) ist ein Anwendungsprogramm nach dem Client-Server-Modell. Anders als klassische Desktopanwendungen werden Webanwendungen nicht lokal auf dem Rechner des Benutzers installiert. Die Datenverarbeitung findet teilweise auf einem entfernten Webserver statt. Die Ergebnisse der Datenverarbeitung werden an den lokalen Client-Rechner des Benutzers übertragen (Thin Client). Genutzt wird eine Webanwendung dabei zumeist über einen Webbrowser. Diese überträgt Daten mit dem Webserver meist über das HTTP-Protokoll.</p><p>Anders als Desktopanwendungen erfordern Webanwendungen kein spezielles Betriebssystem auf dem Rechner des Benutzers. Manche Web-Apps benötigen jedoch aktuelle Webbrowser oder spezielle Laufzeitumgebungen, wie z. B. JavaScript oder Flash.</p><p>Teile der Ausführungslogik führt man dennoch möglichst nicht erst im Server, sondern bereits im Client-Rechner aus, vor allem zur Validierung. Eingabefehler werden so bereits lokal erkannt. Rückmeldungen an den Nutzer erfolgen dadurch sofort ohne ein Warten auf die Rückantwort von einem fernen Server. Mittels AJAX-Technik werden nur Teilbereiche der Inhalte im Webclient aktualisiert ohne die Webseite erneut aufrufen zu müssen. Eine solche Verteilung kann bis hin zu einer Fat-Client-Architektur ausgebaut werden (siehe Single-page-Webanwendungen).</p><p>Durch die Verbreitung internetfähiger, mobiler Smartphones und Tabletcomputer verbreitet sich die Verwendung der Abkürzung Web-App zunehmend.</p><h2 id="g585">Källor</h2><ol class="hebrew"><li><a href="http://docs.racket-lang.org/continue/index.html">från racket-lang.org</a></li><li>wikipedia... <a href="https://en.wikipedia.org/wiki/Web_application">en</a></li></ol>
+    </div>
+
+  </div>
+
+  <footer>
+  </footer>
+
+
+
+
+
+</body>
+
+</html>

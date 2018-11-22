@@ -169,7 +169,7 @@ namespace :utkast do
 
         open(filnamn, 'w') do |post|
           post.puts '#lang pollen/markup'
-          post.puts "◊headline{#{slug}◊sup{alpha}}"
+          post.puts "◊headline{#{slug}}"
           post.puts '◊(define-meta background "../svartalv/bilder/background.jpeg")'
           post.puts "◊define-meta[coverimg]{../svartalv/bilder/background.jpeg}"
           post.puts "◊define-meta[publish-date]{#{idag}}"
