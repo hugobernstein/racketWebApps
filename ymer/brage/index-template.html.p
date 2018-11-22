@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="google" content="notranslate">
+  <meta http-equiv="Content-Language" content="en">
+  <title>mstill.io/blog</title>
+  <script src="//use.typekit.net/ubv3gvw.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    try {
+      Typekit.load();
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" type="text/css" href="../svartalv/css/monokai.css" />
+  <link rel="stylesheet" type="text/css" href="../svartalv/css/style.css" />
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+
+
+  ◊when/splice[(select-from-metas 'background here)]{
+  <style>
+    #header {
+      background-image: url(◊(select-from-metas 'background metas));
+      background-size: cover;
+      background-position: center top;
+      margin-bottom: 6em;
+    }
+  </style>
+  }
+
+</head>
+
+<body>
+  <div id="header">
+    <a href="../index.html">
+      <img src="../svartalv/bilder/logo-fjaril.png" />
+    </a>
+    <span class="righty">
+    <a href="../../index.ptree">&delta;</a>
+    </span>
+  </div>
+
+  <div id="avsnitt">
+    ◊(add-between (map (λ (x)
+    (->html `(div [[class "abstract"]]
+    (h2 ,(select 'h1 x))
+    (p ((class "index-date")) "Published on " ,@(format-date (select-from-metas 'publish-date x))
+    " in " ,@(format-cats (select-from-metas 'categories x)))
+    (p ,@(get-elements (remove-supref (select-element 'p 'body x)))
+    (br)
+    (a [[href ,(symbol->string x)]
+    [class "readmore"]]
+    "Read more")))))
+    (children here))
+    (->html `(hr)))
+  </div>
+
+
+  <footer>
+    by Hugo Bernstein(王虎), 2k18
+  </footer>
+
+</body>
+
+</html>
