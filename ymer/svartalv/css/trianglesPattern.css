@@ -1,26 +1,6 @@
-body {
-  margin: 0;
-  padding: 0;
-  background: #fff; }
-
-canvas,
-body {
+canvas {
   padding: 0;
   margin: 0;
   overflow: hidden; }
-
-.enter {
-  margin-left: auto;
-  margin-right: auto; }
-  .enter h1 {
-    text-align: center;
-    color: gray; }
-span {
-  position: fixed;
-  text-align: center;
-  writing-mode: vertical-rl;
-  top: 50%;
-  right: 0;
-  color: gray; }
 
 /*# sourceMappingURL=trianglesPattern.css.map */

@@ -1,0 +1,1 @@
+{"version":3,"file":"trianglesPattern.css","sources":["trianglesPattern.scss"],"sourcesContent":["\ncanvas{\n  padding: 0;\n  margin: 0;\n  overflow: hidden;\n}\n"],"names":[],"mappings":"AACA,AAAA,MAAM,CAAA;EACJ,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,QAAQ,EAAE,MAAM,GACjB"}

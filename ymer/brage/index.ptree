@@ -1,4 +1,8 @@
 #lang pollen
-◊index.html{2018-11-23-web-app-in-racket-pm.html
+◊index.html{2018-11-23-arbetslogg-pm.html
+2018-11-23-native-app-pm.html
+2018-11-23-web-app-in-racket-pm.html
 }
 category/blog.html
+category/webApps.html
+category/nativeApps.html

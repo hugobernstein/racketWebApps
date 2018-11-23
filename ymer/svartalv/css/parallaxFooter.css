@@ -1,0 +1,174 @@
+.sketch__pattern {
+  background-image: repeating-linear-gradient(-45deg, rgba(238, 232, 213, 0.1), rgba(238, 232, 213, 0.1) 1px, transparent 1px, transparent 10px);
+  background-size: 56px 56px; }
+
+.sketch__pattern-v {
+  background-image: repeating-linear-gradient(45deg, rgba(238, 232, 213, 0.1), rgba(238, 232, 213, 0.1) 1px, transparent 1px, transparent 10px);
+  background-size: 56px 56px; }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10; }
+
+@supports (position: sticky) {
+  body {
+    padding-top: 0; }
+  header {
+    position: sticky; } }
+
+.navbar__trans {
+  position: relative;
+  height: 3.236rem;
+  width: 100%;
+  transition: .5s ease; }
+  .navbar__trans .nav__trans {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: right;
+    margin-right: 5%; }
+    .navbar__trans .nav__trans .item__trans {
+      list-style: none;
+      display: inline-block;
+      font-size: 18px;
+      padding: 5px;
+      font-weight: 300;
+      line-height: 80px;
+      margin-right: 20px;
+      transition: 0.5s ease; }
+      .navbar__trans .nav__trans .item__trans .highlight__trans {
+        display: inline-block;
+        height: 40px;
+        line-height: 30px;
+        padding: 5px;
+        transition: 0.5s ease; }
+      .navbar__trans .nav__trans .item__trans a {
+        text-decoration: none;
+        font-weight: 800;
+        color: #073642;
+        text-shadow: 0 0 5px #fdf6e3; }
+        .navbar__trans .nav__trans .item__trans a:hover {
+          color: #268bd2;
+          text-decoration: underline; }
+  .navbar__trans .logo__trans {
+    float: left;
+    display: inline-block;
+    margin-top: .618rem;
+    margin-left: .618rem;
+    width: 6.69852rem;
+    height: 6.69852rem;
+    transition: 0.5s ease; }
+    .navbar__trans .logo__trans img {
+      width: 100%; }
+      .navbar__trans .logo__trans img:hover {
+        transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg); }
+  .navbar__trans .title__logo__trans img {
+    height: 2.61792rem; }
+
+.scrolled__trans {
+  transition: 0.5s ease; }
+  .scrolled__trans.navbar__trans {
+    height: 2.61792rem;
+    background-color: #FFDA1A;
+    transition: 0.5s ease; }
+    .scrolled__trans.navbar__trans .nav__trans .item__trans {
+      line-height: 40px;
+      transition: 0.5s ease; }
+      .scrolled__trans.navbar__trans .nav__trans .item__trans .highlight__trans {
+        display: inline-block;
+        background-color: #268bd2;
+        color: #FFDA1A;
+        height: 2.472rem;
+        padding: .618rem;
+        text-shadow: none;
+        border-radius: .618rem .618rem 0 0;
+        transition: 0.5s ease; }
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif; }
+
+#titeln {
+  position: absolute;
+  top: 50%;
+  left: 38.2vw; }
+  #titeln span.ett {
+    font-family: serif;
+    font-size: 4.854rem;
+    font-weight: 800;
+    text-shadow: 0 0 13px #fdf6e3;
+    text-transform: uppercase; }
+  #titeln span.andra {
+    font-family: serif;
+    font-size: 3.236rem;
+    font-weight: 800;
+    text-shadow: 0 0 13px #fdf6e3;
+    text-align: right;
+    text-transform: capitalize;
+    color: #586e75; }
+
+#site-content {
+  min-height: 100%;
+  min-height: 100vh;
+  padding-top: 6.69852rem;
+  position: relative;
+  z-index: 1;
+  -webkit-box-shadow: #002b36 0 7px 35px 0;
+  -moz-box-shadow: #002b36 0 7px 35px 0;
+  box-shadow: #002b36 0 7px 35px 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #073642; }
+
+#site-footer {
+  min-height: 20vw;
+  background-size: cover;
+  background-position: center;
+  padding: 25px 0;
+  font-size: 85%;
+  background-color: #002b36;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  text-transform: capitalize;
+  color: #eee8d5; }
+  #site-footer .copyright {
+    position: absolute;
+    top: 90%;
+    left: 61.8%;
+    color: #839496; }
+
+.vertical-rl {
+  writing-mode: vertical-rl;
+  color: #839496;
+  display: inline-block;
+  float: right; }
+
+#info {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  writing-mode: vertical-rl;
+  color: #839496;
+  display: inline-block;
+  float: right;
+  font-style: italic; }
+  #info span {
+    font-size: .618rem;
+    color: #839496; }
+    #info span a {
+      color: #FF4F00;
+      text-decoration: none; }
+
+/*# sourceMappingURL=parallaxFooter.css.map */
